@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FireGuard Pro - Especificaciones Técnicas</title>
+    <title>FireGuard Pro - Tecnología</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="diseno.css">
 </head>
@@ -21,135 +21,271 @@
         </div>
     </nav>
 
-    <section class="product-info-section" id="info">
+    <!-- Introducción Tecnológica -->
+    <section class="tech-intro-section">
         <div class="container">
-            <div class="scroll-reveal">
-                <h2 style="text-align: center; font-size: 3.5rem; font-weight: 900; margin-bottom: 2rem; background: linear-gradient(45deg, #ffffff, #ff6b35); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-                    FireGuard Pro - Especificaciones Técnicas
-                </h2>
+            <h2>Tecnología de Detección Avanzada</h2>
+            <p style="text-align: center; font-size: 1.3rem; color: var(--text-secondary); max-width: 900px; margin: 0 auto 4rem;">
+                FireGuard Pro integra las tecnologías más avanzadas para ofrecer detección temprana, precisa y confiable de incendios forestales y rurales
+            </p>
+
+            <div class="tech-overview">
+                <div class="tech-overview-card">
+                    <div class="tech-overview-icon">🔬</div>
+                    <h3>Sensores de Alta Precisión</h3>
+                    <p>
+                        Nuestro sistema utiliza sensores térmicos de última generación capaces de detectar variaciones de temperatura de hasta 0.1°C. 
+                        El sensor de monóxido de carbono (CO) identifica concentraciones peligrosas desde 0.01 ppm, permitiendo detectar combustiones 
+                        incompletas y procesos de autocombustión antes de que se produzcan llamas visibles.
+                    </p>
+                </div>
+
+                <div class="tech-overview-card">
+                    <div class="tech-overview-icon">🧠</div>
+                    <h3>Inteligencia Artificial Predictiva</h3>
+                    <p>
+                        El sistema incorpora algoritmos de Machine Learning que aprenden de los patrones de temperatura, humedad y emisiones de gases 
+                        en cada ubicación específica. Esto permite reducir falsos positivos en un 95% y anticipar situaciones de riesgo hasta 30 minutos 
+                        antes de que se produzca la ignición.
+                    </p>
+                </div>
+
+                <div class="tech-overview-card">
+                    <div class="tech-overview-icon">📡</div>
+                    <h3>Conectividad Redundante</h3>
+                    <p>
+                        Sistema triple de comunicación: 5G/4G para áreas con cobertura celular, LoRaWAN para zonas remotas con alcance de hasta 15km, 
+                        y comunicación satelital como respaldo. Garantizamos que la alerta llegue siempre, sin importar las condiciones.
+                    </p>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Especificaciones Técnicas Detalladas -->
+    <section class="product-info-section" id="especificaciones">
+        <div class="container">
+            <h2>Especificaciones Técnicas Completas</h2>
             
             <div class="product-info-grid">
-                <div class="info-card scroll-reveal">
+                <div class="info-card">
                     <div class="info-icon">🔬</div>
-                    <h3>Sensores Avanzados</h3>
+                    <h3>Sistema de Sensores</h3>
                     <div class="info-details">
-                        <p><strong>Sensor de Temperatura:</strong></p>
+                        <p><strong>Sensor de Temperatura MLX90614:</strong></p>
                         <ul>
-                            <li>Rango: -40°C a +85°C</li>
-                            <li>Precisión: ±0.1°C</li>
+                            <li>Rango de medición: -40°C a +85°C (ambiente)</li>
+                            <li>Rango objeto: -70°C a +380°C</li>
+                            <li>Precisión: ±0.1°C en rango normal</li>
                             <li>Tiempo de respuesta: <2 segundos</li>
-                            <li>Calibración automática</li>
+                            <li>Interfaz: I2C digital</li>
+                            <li>Calibración automática cada 24h</li>
                         </ul>
-                        <p><strong>Detector de Humo:</strong></p>
+                        <p><strong>Sensor de CO MQ-7:</strong></p>
                         <ul>
-                            <li>Detección por dispersión láser</li>
+                            <li>Rango de detección: 10-500 ppm</li>
                             <li>Sensibilidad: 0.01 ppm</li>
-                            <li>Discriminación de partículas</li>
-                            <li>Auto-limpieza integrada</li>
+                            <li>Tiempo de respuesta: <60 segundos</li>
+                            <li>Voltaje de operación: 5V DC</li>
+                            <li>Señal de salida: Analógica y digital</li>
+                        </ul>
+                        <p><strong>Sensor de Humo Óptico:</strong></p>
+                        <ul>
+                            <li>Tecnología: Dispersión láser</li>
+                            <li>Detección de partículas: 0.3-10 μm</li>
+                            <li>Discriminación de tipo de humo</li>
+                            <li>Sistema de auto-limpieza integrado</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="info-card scroll-reveal">
+                <div class="info-card">
                     <div class="info-icon">⚡</div>
-                    <h3>Alimentación y Autonomía</h3>
+                    <h3>Sistema de Energía</h3>
                     <div class="info-details">
-                        <p><strong>Sistema Energético Híbrido:</strong></p>
+                        <p><strong>Panel Solar:</strong></p>
                         <ul>
-                            <li>Panel solar monocristalino 50W</li>
-                            <li>Batería LiFePO4 de 100Ah</li>
+                            <li>Tipo: Monocristalino de alta eficiencia</li>
+                            <li>Potencia: 50W pico</li>
+                            <li>Eficiencia: >22%</li>
+                            <li>Voltaje nominal: 18V</li>
+                            <li>Resistente a granizo hasta 25mm</li>
+                            <li>Garantía: 25 años al 80% eficiencia</li>
+                        </ul>
+                        <p><strong>Batería de Respaldo:</strong></p>
+                        <ul>
+                            <li>Tipo: LiFePO4 (Litio-Ferro-Fosfato)</li>
+                            <li>Capacidad: 100Ah @ 12V = 1200Wh</li>
+                            <li>Ciclos de vida: >3000 ciclos al 80%</li>
                             <li>Autonomía: 30 días sin sol</li>
-                            <li>Carga completa en 6 horas</li>
+                            <li>Carga completa: 6 horas (sol directo)</li>
+                            <li>Rango de temperatura: -20°C a +60°C</li>
                         </ul>
-                        <p><strong>Eficiencia:</strong></p>
+                        <p><strong>Gestión de Energía:</strong></p>
                         <ul>
+                            <li>Controlador MPPT de alta eficiencia</li>
                             <li>Consumo en reposo: 0.5W</li>
-                            <li>Consumo activo: 2.5W</li>
-                            <li>Modo hibernación disponible</li>
+                            <li>Consumo en monitoreo activo: 2.5W</li>
+                            <li>Consumo en transmisión: 5W (picos)</li>
+                            <li>Modo de bajo consumo programable</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="info-card scroll-reveal">
+                <div class="info-card">
                     <div class="info-icon">📡</div>
-                    <h3>Conectividad</h3>
+                    <h3>Sistema de Comunicación</h3>
                     <div class="info-details">
-                        <p><strong>Comunicaciones Redundantes:</strong></p>
+                        <p><strong>Conectividad Celular:</strong></p>
                         <ul>
-                            <li>5G/4G LTE con eSIM</li>
-                            <li>LoRaWAN para áreas remotas</li>
-                            <li>Comunicación satelital backup</li>
-                            <li>Mesh networking entre estacas</li>
+                            <li>Módulo 5G/4G LTE con eSIM</li>
+                            <li>Bandas: B1/B3/B5/B7/B8/B20/B28</li>
+                            <li>Velocidad: hasta 150 Mbps</li>
+                            <li>Latencia: <50ms</li>
+                            <li>Antena omnidireccional 5dBi</li>
                         </ul>
-                        <p><strong>Protocolos:</strong></p>
+                        <p><strong>LoRaWAN (Zonas Remotas):</strong></p>
                         <ul>
-                            <li>MQTT seguro con TLS</li>
-                            <li>API REST integrada</li>
-                            <li>Cifrado AES-256</li>
+                            <li>Frecuencia: 915 MHz (América)</li>
+                            <li>Alcance: hasta 15 km en campo abierto</li>
+                            <li>Potencia de transmisión: 20 dBm</li>
+                            <li>Clase de dispositivo: Clase A/C</li>
+                            <li>Tasa de datos adaptativa</li>
+                        </ul>
+                        <p><strong>Comunicación Satelital:</strong></p>
+                        <ul>
+                            <li>Sistema de respaldo automático</li>
+                            <li>Latencia: 2-5 segundos</li>
+                            <li>Cobertura global 100%</li>
+                            <li>Activación en caso de fallo celular/LoRa</li>
+                        </ul>
+                        <p><strong>Mesh Networking:</strong></p>
+                        <ul>
+                            <li>Protocolo: Zigbee 3.0</li>
+                            <li>Red mallada entre estacas cercanas</li>
+                            <li>Auto-reparación de red</li>
+                            <li>Alcance entre nodos: 300m</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="info-card scroll-reveal">
+                <div class="info-card">
                     <div class="info-icon">🛡️</div>
-                    <h3>Durabilidad</h3>
+                    <h3>Construcción y Durabilidad</h3>
                     <div class="info-details">
-                        <p><strong>Resistencia Extrema:</strong></p>
+                        <p><strong>Materiales:</strong></p>
                         <ul>
-                            <li>Clasificación IP68</li>
-                            <li>Resistente a incendios hasta 800°C</li>
-                            <li>Anti-vandálico</li>
-                            <li>Materiales aeroespaciales</li>
+                            <li>Carcasa: Aleación de aluminio aeroespacial 6061-T6</li>
+                            <li>Recubrimiento: Anodizado duro + pintura ignífuga</li>
+                            <li>Sensores: Compartimento hermético IP68</li>
+                            <li>Juntas: Silicona de alta temperatura</li>
+                            <li>Ventana de sensores: Vidrio borosilicato</li>
                         </ul>
-                        <p><strong>Condiciones Operativas:</strong></p>
+                        <p><strong>Protección Ambiental:</strong></p>
                         <ul>
-                            <li>Temperatura: -40°C a +85°C</li>
-                            <li>Humedad: 0% a 100%</li>
-                            <li>Viento: hasta 200 km/h</li>
-                            <li>Vida útil: 15+ años</li>
+                            <li>Clasificación: IP68 (sumergible 1m/30min)</li>
+                            <li>Resistencia UV: Rating 8 (máximo)</li>
+                            <li>Resistencia al fuego: hasta 800°C por 10 min</li>
+                            <li>Resistencia a impactos: IK10</li>
+                            <li>Resistencia al viento: hasta 200 km/h</li>
+                        </ul>
+                        <p><strong>Rango Operativo:</strong></p>
+                        <ul>
+                            <li>Temperatura ambiente: -40°C a +85°C</li>
+                            <li>Humedad relativa: 0% a 100%</li>
+                            <li>Altitud: hasta 4000 msnm</li>
+                            <li>Precipitación: resistente a lluvia intensa</li>
+                        </ul>
+                        <p><strong>Vida Útil:</strong></p>
+                        <ul>
+                            <li>Estructura: 15+ años</li>
+                            <li>Sensores: 10 años (reemplazables)</li>
+                            <li>Batería: 8-10 años</li>
+                            <li>Panel solar: 25 años (garantía)</li>
+                            <li>Mantenimiento: Revisión anual recomendada</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="info-card scroll-reveal">
+                <div class="info-card">
                     <div class="info-icon">🧠</div>
-                    <h3>Inteligencia Artificial</h3>
+                    <h3>Procesamiento e IA</h3>
                     <div class="info-details">
-                        <p><strong>Procesamiento Edge:</strong></p>
+                        <p><strong>Unidad de Procesamiento:</strong></p>
                         <ul>
-                            <li>Chip ARM Cortex-A78</li>
-                            <li>8GB RAM, 64GB storage</li>
-                            <li>GPU integrada para IA</li>
-                            <li>Actualizaciones OTA</li>
+                            <li>CPU: ARM Cortex-A78 Quad-Core @ 2.0GHz</li>
+                            <li>GPU: Mali-G68 para procesamiento IA</li>
+                            <li>NPU: 6 TOPS de inferencia IA</li>
+                            <li>RAM: 8GB LPDDR5</li>
+                            <li>Almacenamiento: 64GB eMMC</li>
+                            <li>Sistema operativo: Linux embebido</li>
                         </ul>
-                        <p><strong>Algoritmos:</strong></p>
+                        <p><strong>Algoritmos de IA:</strong></p>
                         <ul>
-                            <li>Machine Learning local</li>
-                            <li>Análisis predictivo</li>
-                            <li>Reducción falsos positivos</li>
-                            <li>Aprendizaje continuo</li>
+                            <li>Machine Learning en el Edge</li>
+                            <li>Redes neuronales convolucionales (CNN)</li>
+                            <li>Análisis de series temporales con LSTM</li>
+                            <li>Algoritmos de detección de anomalías</li>
+                            <li>Fusión de múltiples sensores</li>
+                            <li>Reducción de falsos positivos: 95%</li>
+                        </ul>
+                        <p><strong>Capacidades Predictivas:</strong></p>
+                        <ul>
+                            <li>Predicción de riesgo en tiempo real</li>
+                            <li>Análisis de tendencias de 30 días</li>
+                            <li>Correlación con datos meteorológicos</li>
+                            <li>Aprendizaje de patrones locales</li>
+                            <li>Alertas anticipadas: hasta 30 min</li>
+                        </ul>
+                        <p><strong>Actualizaciones:</strong></p>
+                        <ul>
+                            <li>OTA (Over-The-Air) automáticas</li>
+                            <li>Mejoras de algoritmos remotas</li>
+                            <li>Actualizaciones de seguridad mensuales</li>
+                            <li>Rollback automático si falla</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="info-card scroll-reveal">
+                <div class="info-card">
                     <div class="info-icon">📏</div>
-                    <h3>Dimensiones y Instalación</h3>
+                    <h3>Dimensiones e Instalación</h3>
                     <div class="info-details">
                         <p><strong>Especificaciones Físicas:</strong></p>
                         <ul>
                             <li>Altura total: 2.5 metros</li>
-                            <li>Diámetro: 15 cm</li>
-                            <li>Peso: 45 kg</li>
-                            <li>Profundidad enterrado: 80 cm</li>
+                            <li>Altura sobre el suelo: 1.7 metros</li>
+                            <li>Diámetro del poste: 15 cm</li>
+                            <li>Peso total: 45 kg</li>
+                            <li>Profundidad de enterrado: 80 cm</li>
+                            <li>Base de anclaje: 40 x 40 cm</li>
                         </ul>
-                        <p><strong>Instalación:</strong></p>
+                        <p><strong>Requisitos de Instalación:</strong></p>
                         <ul>
-                            <li>Herramientas básicas requeridas</li>
+                            <li>Herramientas: Pala, nivel, apisonador</li>
                             <li>Tiempo de instalación: 2 horas</li>
-                            <li>Auto-configuración</li>
+                            <li>Personal requerido: 2 personas</li>
+                            <li>Cemento: 1 bolsa de 50kg</li>
+                            <li>Área despejada: radio de 3 metros</li>
+                        </ul>
+                        <p><strong>Proceso de Instalación:</strong></p>
+                        <ul>
+                            <li>1. Excavación de hoyo (80cm profundidad)</li>
+                            <li>2. Instalación de base y nivelación</li>
+                            <li>3. Fijación con cemento</li>
+                            <li>4. Montaje de la estaca</li>
+                            <li>5. Conexión de sensores</li>
+                            <li>6. Auto-configuración del sistema (15 min)</li>
+                            <li>7. Prueba de conectividad</li>
+                            <li>8. Activación remota</li>
+                        </ul>
+                        <p><strong>Soporte:</strong></p>
+                        <ul>
                             <li>Soporte técnico 24/7</li>
+                            <li>Manual de instalación incluido</li>
+                            <li>Video tutorial paso a paso</li>
+                            <li>Asistencia remota disponible</li>
+                            <li>Garantía: 5 años</li>
                         </ul>
                     </div>
                 </div>
@@ -157,34 +293,83 @@
         </div>
     </section>
 
-    <section class="product-section" id="product">
+    <!-- Funcionamiento del Sistema -->
+    <section class="system-operation-section">
         <div class="container">
-            <div class="product-grid">
-                <div class="product-visual scroll-reveal">
-                    <div class="stake-3d">
-                        <div class="sensor-ring"></div>
-                        <div class="smoke-visualization"></div>
-                    </div>
+            <h2>¿Cómo Funciona FireGuard Pro?</h2>
+            <div class="operation-timeline">
+                <div class="operation-step">
+                    <div class="step-number">1</div>
+                    <h3>Monitoreo Continuo</h3>
+                    <p>Los sensores toman mediciones cada 5 segundos de temperatura, CO y humo. Los datos se procesan localmente mediante IA para detectar patrones anómalos.</p>
                 </div>
-                <div class="product-content scroll-reveal">
-                    <h2>FireGuard Pro</h2>
-                    <p>
-                        Revolucionaria estaca inteligente que combina sensores IoT avanzados, 
-                        inteligencia artificial y conectividad 5G para detectar incendios 
-                        en sus primeros segundos de vida.
-                    </p>
-                    <ul class="features-list">
-                        <li>Detección multi-espectral de temperatura y gases</li>
-                        <li>IA predictiva con machine learning</li>
-                        <li>Conectividad satelital y 5G redundante</li>
-                        <li>Autonomía energética con células solares</li>
-                        <li>Resistencia extrema IP68</li>
-                        <li>Instalación plug-and-play</li>
-                    </ul>
-                    <a href="./info.html" class="cta-primary">
-                        Ver Más Información
-                        <span>📋</span>
-                    </a>
+
+                <div class="operation-step">
+                    <div class="step-number">2</div>
+                    <h3>Análisis Inteligente</h3>
+                    <p>El algoritmo de Machine Learning compara los datos con patrones históricos y modelos predictivos. Identifica si las condiciones son normales o indican un riesgo.</p>
+                </div>
+
+                <div class="operation-step">
+                    <div class="step-number">3</div>
+                    <h3>Detección de Anomalías</h3>
+                    <p>Cuando se detecta: incremento de temperatura >5°C en 10 minutos, presencia de CO >50 ppm, o humo persistente, el sistema activa el protocolo de alerta.</p>
+                </div>
+
+                <div class="operation-step">
+                    <div class="step-number">4</div>
+                    <h3>Alerta Multinivel</h3>
+                    <p>Se envían alertas simultáneas vía SMS, email, notificación push y llamada telefónica a los contactos registrados. Incluye ubicación GPS exacta y nivel de riesgo.</p>
+                </div>
+
+                <div class="operation-step">
+                    <div class="step-number">5</div>
+                    <h3>Respuesta Rápida</h3>
+                    <p>Los equipos de emergencia reciben la ubicación precisa y pueden intervenir en los primeros minutos, cuando el fuego aún es controlable.</p>
+                </div>
+
+                <div class="operation-step">
+                    <div class="step-number">6</div>
+                    <h3>Monitoreo Post-Evento</h3>
+                    <p>El sistema continúa monitoreando durante 48 horas después de la alerta para detectar rebrotes o focos secundarios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ventajas Tecnológicas -->
+    <section class="advantages-section">
+        <div class="container">
+            <h2>Ventajas Tecnológicas</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <h3>🚀 Detección Ultra-Temprana</h3>
+                    <p>Detecta incendios hasta 30 minutos antes de que aparezcan llamas visibles, gracias al análisis de CO y temperatura.</p>
+                </div>
+
+                <div class="advantage-card">
+                    <h3>🎯 Precisión del 95%</h3>
+                    <p>La IA reduce los falsos positivos al 5%, eliminando las alarmas innecesarias que causan fatiga de alerta.</p>
+                </div>
+
+                <div class="advantage-card">
+                    <h3>🌐 100% Conectado</h3>
+                    <p>Triple sistema de comunicación garantiza que la alerta siempre llegue, sin importar las condiciones.</p>
+                </div>
+
+                <div class="advantage-card">
+                    <h3>♻️ Totalmente Autónomo</h3>
+                    <p>Energía solar con 30 días de autonomía. No requiere conexión eléctrica ni mantenimiento frecuente.</p>
+                </div>
+
+                <div class="advantage-card">
+                    <h3>🛡️ Extremadamente Resistente</h3>
+                    <p>Diseñado para soportar las condiciones más extremas: fuego, lluvia, granizo, viento y temperaturas extremas.</p>
+                </div>
+
+                <div class="advantage-card">
+                    <h3>💰 Bajo Costo Operativo</h3>
+                    <p>Sin costos de electricidad, mantenimiento mínimo y vida útil de 15+ años. ROI en menos de 2 años.</p>
                 </div>
             </div>
         </div>

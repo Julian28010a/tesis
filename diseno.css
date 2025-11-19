@@ -635,6 +635,133 @@ footer {
     }
 }
 
+/* Secciones de Tecnología */
+.tech-intro-section {
+    background: linear-gradient(180deg, var(--darker) 0%, var(--dark) 100%);
+    padding-top: 10rem;
+}
+
+.tech-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.tech-overview-card {
+    background: rgba(255, 107, 53, 0.05);
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 107, 53, 0.2);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.tech-overview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+}
+
+.tech-overview-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech-overview-card h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.tech-overview-card p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    text-align: left;
+}
+
+/* Sistema de Operación */
+.system-operation-section {
+    background: var(--darker);
+}
+
+.operation-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.operation-step {
+    background: rgba(255, 107, 53, 0.05);
+    padding: 2rem;
+    border-radius: 15px;
+    border-left: 4px solid var(--primary);
+    position: relative;
+}
+
+.step-number {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: white;
+    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+}
+
+.operation-step h3 {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+
+.operation-step p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+/* Ventajas */
+.advantages-section {
+    background: var(--dark);
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.advantage-card {
+    background: rgba(0, 217, 255, 0.05);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 217, 255, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.advantage-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 217, 255, 0.2);
+    border-color: rgba(0, 217, 255, 0.4);
+}
+
+.advantage-card h3 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.advantage-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
 @media (max-width: 480px) {
     .hero-content h1 {
         font-size: 2.5rem;
@@ -652,5 +779,11 @@ footer {
     .nav-links {
         flex-direction: column;
         text-align: center;
+    }
+
+    .tech-overview,
+    .operation-timeline,
+    .advantages-grid {
+        grid-template-columns: 1fr;
     }
 }
